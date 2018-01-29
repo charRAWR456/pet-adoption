@@ -16,7 +16,7 @@ animalArray[7].adopted = true;
 animalArray[8].adopted = true;
 
 function populateTab(tabName) {
-  $(tabName+"List").text("");
+  $("#"+tabName+"List").text("");
   var animals;
   if (tabName === "home") {
     animals = animalArray;
@@ -51,15 +51,32 @@ function animalSort(arr, propertyName, propertyValue) {
   });
   return result;
 }
-
+function populatePets(){
+  populateTab("home");
+  populateTab("cat");
+  populateTab("dog");
+  populateTab("bird");
+}
 
 $(function () {
 
   $('#myTab li:last-child a').tab('show');
 
-  populateTab("home");
-  populateTab("cat");
-  populateTab("dog");
-  populateTab("bird");
+  populatePets();
+
+
+  $("#showPetForm").click(function(){
+    $("#addNewPet").toggle();
+  });
+
+  $("#addNewPet").submit(function(event){
+    event.preventDefault();
+    var newPetName = $("#newPetName").val();
+    var newPetSpecies = document.querySelector('input[name="petSpecies"]:checked').value;
+    if (newPetName != '') {
+      animalArray.push(new Animal(newPetName, newPetSpecies));
+      populatePets();
+    };
+  });
 
 })
