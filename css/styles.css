@@ -1,3 +1,16 @@
 #addNewPet {
   display: none;
 }
+.animal-card .card {
+  /*height: 210px;*/
+  width: 210px;
+  margin-bottom: 2em;
+}
+
+.animal-card .card[name=back]{
+  display: none;
+}
+
+.animal-card .card[name=back] .card-body {
+  padding-bottom: 0;
+}
