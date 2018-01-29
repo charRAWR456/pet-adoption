@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <title></title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js" charset="utf-8"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pet Adoption Page</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Pet Adoption Center</h1>
+    <ul class="nav nav-tabs" id="myTab" >
+      <li class="nav-item"><a class="nav-link active" href="#home" data-toggle="tab" role="tab">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#cats" data-toggle="tab" role="tab">Cats</a></li>
+      <li class="nav-item"><a class="nav-link" href="#dogs" data-toggle="tab" role="tab">Dogs</a></li>
+      <li class="nav-item"><a class="nav-link" href="#birds" data-toggle="tab" role="tab">Birds</a></li>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#adoption" id="navbarDropdown" data-toggle="dropdown">View</a>
 
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#all">View All</a>
+          <a class="dropdown-item" href="#adopted">View adopted animals</a>
+          <a class="dropdown-item" href="#available">View available animals</a>
+        </div></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" role="tabpanel" class="tab-pane active">
+          <h3>HOME</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div id="cats" role="tabpanel" class="tab-pane">
+          <h3>Cats</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="dogs" role="tabpanel" class="tab-pane">
+          <h3>Dogs</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="birds" role="tabpanel" class="tab-pane">
+          <h3>Birds</h3>
+          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
+  </html>

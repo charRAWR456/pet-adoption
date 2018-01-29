@@ -15,3 +15,7 @@ function animalSort(arr, propertyName, propertyValue) {
 
   return result;
 }
+
+$(function () {
+  $('#myTab li:last-child a').tab('show')
+})
