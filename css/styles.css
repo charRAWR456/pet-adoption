@@ -10,6 +10,3 @@
 .animal-card .card[name=back] .card-body {
   padding-bottom: 0;
 }
-.animal-card .card-footer {
-  height: auto;
-}
