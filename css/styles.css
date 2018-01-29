@@ -1,6 +1,7 @@
 .animal-card .card {
-  height: 210px;
+  /*height: 210px;*/
   width: 210px;
+  margin-bottom: 2em;
 }
 
 .animal-card .card[name=back]{
