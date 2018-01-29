@@ -1,0 +1,15 @@
+.animal-card .card {
+  height: 210px;
+  width: 210px;
+}
+
+.animal-card .card[name=back]{
+  display: none;
+}
+
+.animal-card .card[name=back] .card-body {
+  padding-bottom: 0;
+}
+.animal-card .card-footer {
+  height: auto;
+}
